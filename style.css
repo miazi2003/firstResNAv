@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Syne:wght@400..800&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    background-image: url("wp3990424-office-wallpapers.jpg");
+
+
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+nav{
+    height:40px;
+    width:100%;
+    display:flex;
+    background-color:white;
+    justify-content:space-evenly;
+    align-items:center;
+    font-family: "Parkinsans", sans-serif;
+    
+}
+.logo{
+height:40px;
+width:auto;
+position:absolute;
+display:flex;
+align-items:center;
+justify-content:center;
+left :20px;
+}
+
+ img{
+    height:100%;
+    width:50px;
+    object-fit:cover;
+}
+
+ul{
+    display:flex;
+    align-items:center;
+    justify-conyent:center;
+    gap:35px;
+    list-style-type:none;
+    position:absolute;
+    right:30px;
+    
+
+}
+li{
+    
+   height:35px;
+    width:auto;
+    display:flex;
+    align-items:center;
+    /* background-color:black; */
+    padding:10px 5px;
+    
+}
+li:hover{
+    
+  background-color:#ccc;
+  border-radius:10px;
+     
+ }
+a{  
+    
+  
+    text-decoration:none;
+    color:black;
+   
+}
+
+
+.hidebar{
+    height:100vh;
+    width:250px;
+
+   display:none;
+   flex-direction:column;
+   position:absolute;
+   top:0;
+   right:0;
+   /* background-color:white; */
+   backdrop-filter:blur(5px);
+   padding:30px;
+   transition:ease .3s;
+
+  
+}
+
+.hidebar li{
+    height:35px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#ccc; 
+    padding:10px 5px;
+    border-radius:20px;
+    
+}
+.hidebar a:hover{
+  
+    color:#ccc;
+}
+
+.hidebar li:hover{
+background-color:gray;
+color:#ccc;
+    
+}
+
+.hidebar li:first-child{
+    height:35px;
+    width:100%;
+    background-color:transparent;
+    
+}
+.close{
+    height:40px;
+    width:100%;
+   
+
+}
+.close img{
+    height:40px;
+    width:40px;
+    object-fit:cover;
+    position:absolute;
+    right:0;
+    top:5px;
+
+}
+
+.menu {
+    height:35px;
+    width:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+
+
+
+
+.menu img{
+    height:35px;
+    width:35px;
+    object-fit:cover;
+    position:absolute;
+    right:0;
+    
+
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display:none;
+    }
+
+}
+
+
+@media(min-width:800px){
+    .hideMenu{
+        display:none
+
+    }
+}
+
+@media(max-width:420px){
+    .hidebar{
+        width:100%;
+        transition:ease .3s;
+    }
+}
