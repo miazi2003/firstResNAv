@@ -77,6 +77,7 @@ a{
   
     text-decoration:none;
     color:black;
+
    
 }
 
@@ -165,7 +166,7 @@ color:#ccc;
 
 }
 
-@media(max-width:800px){
+@media(max-width:600px){
     .hideOnMobile{
         display:none;
     }
@@ -173,7 +174,7 @@ color:#ccc;
 }
 
 
-@media(min-width:800px){
+@media(min-width:600px){
     .hideMenu{
         display:none
 
@@ -185,4 +186,21 @@ color:#ccc;
         width:100%;
         transition:ease .3s;
     }
+}
+
+
+
+.new{
+    height:200px;
+    width:100px;
+    background-color:white;
+    z-index:999;
+    border-radius:10px;
+    border:1px solid black;
+    position:absolute;
+    top:40px;
+    right:390px;
+    display:none;
+    align-items:center;
+    justify-content:center;
 }
